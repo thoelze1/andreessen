@@ -37,4 +37,4 @@ http.o:
 	$(CXX) -c -std=c++11 http/http.cpp
 
 clean:
-	rm *.o main
+	rm -f *.o main
