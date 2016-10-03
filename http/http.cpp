@@ -54,7 +54,7 @@ std::string Http::dropHeaders(std::string doc) {
 
 std::string Http::entryPoint(std::string url) {
     connect(url);
-    std::string req = "GET /index.html HTTP/1.1\nHost: "+url+"\n\n";
+    std::string req = "GET /andreessen.html HTTP/1.1\nHost: "+url+"\n\n";
     std::string response = makeRequest(req.c_str());
     response = dropHeaders(response);
     return response;
