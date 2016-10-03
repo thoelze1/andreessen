@@ -1,5 +1,5 @@
 ifeq "$(shell uname)" "Darwin"
-	LDFLAGS= -lglut -framework OpenGL
+	LDFLAGS= -framework GLUT -framework OpenGL -framework Cocoa
 	CXX=g++
 else
 	LDFLAGS= -lglut -lGL -lGLU -lX11
